@@ -4,23 +4,27 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "orr-station-usage"
-version = "0.1.0"
-description = "Read the ORR's estimates of station usage (tables 1410 and 1415) into tidy tables."
+version = "0.1.1"
+description = "Read ORR estimates of station usage in Python: entries, exits and interchanges at every GB railway station since 1997."
 readme = "README.md"
 requires-python = ">=3.11"
 license = "GPL-3.0-only"
 license-files = ["LICENSE"]
 authors = [{ name = "Dillon Rose", email = "dillonrose0@icloud.com" }]
-keywords = ["rail", "orr", "station-usage", "entries-and-exits", "open-rail-data"]
+keywords = ["orr", "station-usage", "footfall", "entries-and-exits", "passenger-numbers", "railway-stations", "railway", "uk-rail", "office-of-rail-and-road", "great-britain", "open-data"]
 classifiers = [
     "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
     "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dependencies = ["odfpy>=1.4", "openpyxl>=3.1", "pandas>=2.0"]
 
@@ -32,7 +36,10 @@ orr-station-usage = "orr_station_usage.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/rosedillon/orr-station-usage"
+Documentation = "https://github.com/rosedillon/orr-station-usage#readme"
+Source = "https://github.com/rosedillon/orr-station-usage"
 Issues = "https://github.com/rosedillon/orr-station-usage/issues"
+Changelog = "https://github.com/rosedillon/orr-station-usage/releases"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -23,7 +23,7 @@ from orr_station_usage.tables import (
     read_table_1415,
 )
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
     "TABLE_1410_COLUMNS",
