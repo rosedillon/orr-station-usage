@@ -22,7 +22,9 @@ latest. This package reads any of them into the same columns.
 from orr_station_usage import read_table_1410, read_table_1415
 
 latest = read_table_1410("table-1410-passenger-entries-and-exits-and-interchanges-by-station.ods")
-series = read_table_1415("table-1415-time-series-of-passenger-entries-and-exits-and-interchanges-by-station.ods")
+series = read_table_1415(
+    "table-1415-time-series-of-passenger-entries-and-exits-and-interchanges-by-station.ods"
+)
 ```
 
 ## Install
